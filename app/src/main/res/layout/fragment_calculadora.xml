@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFF3E0"
+    tools:context="com.prueba.principales.ilconto.calculadora">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        app:srcCompat="@color/Barra_estado"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="50sp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imageView"
+        android:layout_height="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp" />
+
+    <TextView
+        android:text="    Calcula tu cuenta..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:typeface="normal"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_alignParentTop="true" />
+
+    <ImageButton
+        android:layout_width="70sp"
+        app:srcCompat="@drawable/log48"
+        android:layout_alignTop="@+id/imageButton8"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageButton9"
+        android:layout_height="100sp" />
+
+    <ImageButton
+        android:layout_width="70sp"
+        app:srcCompat="@android:drawable/btn_dialog"
+        android:id="@+id/imageButton10"
+        android:layout_alignTop="@+id/imageButton9"
+        android:layout_toEndOf="@+id/imageButton9"
+        android:layout_marginStart="42dp"
+        android:layout_height="100sp" />
+
+    <ImageButton
+        android:layout_width="70sp"
+        app:srcCompat="@drawable/pes48"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/imageButton8"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_height="100sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_above="@+id/imageButton9"
+        android:layout_alignStart="@+id/imageButton8"
+        android:id="@+id/editText6"
+        android:layout_alignEnd="@+id/imageButton8" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_above="@+id/imageButton9"
+        android:layout_alignStart="@+id/imageButton9"
+        android:id="@+id/editText7"
+        android:layout_toStartOf="@+id/imageButton10" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_above="@+id/imageButton10"
+        android:layout_alignStart="@+id/imageButton10"
+        android:id="@+id/editText8"
+        android:layout_alignEnd="@+id/imageButton10" />
+
+    <TextView
+        android:text="Saldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton8"
+        android:layout_alignStart="@+id/imageButton8"
+        android:id="@+id/textView2"
+        android:layout_alignEnd="@+id/imageButton8"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Cantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton9"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView6"
+        android:layout_alignBottom="@+id/textView2"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Propina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignEnd="@+id/imageButton10"
+        android:id="@+id/textView7"
+        android:layout_alignStart="@+id/imageButton10"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="Calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="70sp"
+        android:layout_marginTop="51dp"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignEnd="@+id/textView7"
+        android:background="#E0E0E0" />
+
+</RelativeLayout>
