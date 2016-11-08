@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "638208842977",
+    "firebase_url": "https://il-conto.firebaseio.com",
+    "project_id": "il-conto",
+    "storage_bucket": "il-conto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638208842977:android:7871062bc5b92f91",
+        "android_client_info": {
+          "package_name": "com.prueba.principales.ilconto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "638208842977-gsf6bd425prg8s4ls69fp31ajlr00u3t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGlX3T2CvPHVYHUUhYvaIOtgGo_uYDTDw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
