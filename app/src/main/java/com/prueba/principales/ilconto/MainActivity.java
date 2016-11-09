@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 submitPost();
-                Snackbar.make(view, "Tócame y te demando...", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Tu pedido está siendo procesado", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
         String key = mDatabase.child("posts").push().getKey();
         Map<String, Object> postValues = new HashMap<>();
-        postValues.put("miClave", "miValor");
+        postValues.put("Accion", "Llamar al mozo");
 
         Map<String, Object> childUpdates = new HashMap<>();
         childUpdates.put("/posts/" + key, postValues);
