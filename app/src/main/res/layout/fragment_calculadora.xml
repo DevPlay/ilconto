@@ -38,105 +38,84 @@
         android:gravity="center"
         android:layout_alignParentTop="true" />
 
-    <ImageButton
-        android:layout_width="70sp"
-        app:srcCompat="@drawable/log48"
-        android:layout_alignTop="@+id/imageButton8"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/imageButton9"
-        android:layout_height="100sp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/log96"
+        android:layout_below="@+id/editText3"
+        android:id="@+id/imageView7"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_alignEnd="@+id/editText3" />
 
-    <ImageButton
-        android:layout_width="70sp"
-        app:srcCompat="@android:drawable/btn_dialog"
-        android:id="@+id/imageButton10"
-        android:layout_alignTop="@+id/imageButton9"
-        android:layout_toEndOf="@+id/imageButton9"
-        android:layout_marginStart="42dp"
-        android:layout_height="100sp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/porce"
+        android:id="@+id/imageView8"
+        android:layout_alignEnd="@+id/editText4"
+        android:layout_below="@+id/editText4"
+        android:layout_alignStart="@+id/editText4"
+        android:layout_alignBottom="@+id/imageView7" />
 
-    <ImageButton
-        android:layout_width="70sp"
-        app:srcCompat="@drawable/pes48"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="100dp"
-        android:id="@+id/imageButton8"
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pes96"
+        android:id="@+id/imageView6"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2"
+        android:layout_alignBottom="@+id/imageView7" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="65dp"
+        android:id="@+id/editText2"
+        android:hint="Saldo"
+        android:layout_marginEnd="17dp"
         android:layout_below="@+id/imageView2"
-        android:layout_alignStart="@+id/imageView"
-        android:layout_height="100sp" />
+        android:layout_toStartOf="@+id/editText3"
+        android:textAlignment="center"
+        android:layout_width="90sp"
+        android:textSize="16sp" />
 
     <EditText
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:layout_above="@+id/imageButton9"
-        android:layout_alignStart="@+id/imageButton8"
-        android:id="@+id/editText6"
-        android:layout_alignEnd="@+id/imageButton8" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:layout_above="@+id/imageButton9"
-        android:layout_alignStart="@+id/imageButton9"
-        android:id="@+id/editText7"
-        android:layout_toStartOf="@+id/imageButton10" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:layout_above="@+id/imageButton10"
-        android:layout_alignStart="@+id/imageButton10"
-        android:id="@+id/editText8"
-        android:layout_alignEnd="@+id/imageButton10" />
-
-    <TextView
-        android:text="Saldo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageButton8"
-        android:layout_alignStart="@+id/imageButton8"
-        android:id="@+id/textView2"
-        android:layout_alignEnd="@+id/imageButton8"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textAlignment="center" />
-
-    <TextView
-        android:text="Cantidad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageButton9"
+        android:id="@+id/editText3"
+        android:layout_alignBaseline="@+id/editText2"
+        android:layout_alignBottom="@+id/editText2"
         android:layout_centerHorizontal="true"
-        android:id="@+id/textView6"
-        android:layout_alignBottom="@+id/textView2"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textAlignment="center" />
+        android:hint="Comensales"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_width="90sp" />
 
-    <TextView
-        android:text="Propina"
-        android:layout_width="wrap_content"
+    <EditText
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView6"
-        android:layout_alignEnd="@+id/imageButton10"
-        android:id="@+id/textView7"
-        android:layout_alignStart="@+id/imageButton10"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textAlignment="center" />
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:hint="Propina"
+        android:layout_marginStart="24dp"
+        android:layout_alignBaseline="@+id/editText3"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_toEndOf="@+id/editText3"
+        android:textAlignment="center"
+        android:layout_width="90sp"
+        android:textSize="16sp" />
 
     <Button
         android:text="Calcular"
         android:layout_width="wrap_content"
-        android:layout_height="70sp"
-        android:layout_marginTop="51dp"
-        android:id="@+id/button"
-        android:layout_below="@+id/textView2"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_alignEnd="@+id/textView7"
-        android:background="#E0E0E0" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:id="@+id/calcu_btn"
+        android:onClick="conejo"
+        android:layout_below="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_alignEnd="@+id/imageView8" />
 
 </RelativeLayout>

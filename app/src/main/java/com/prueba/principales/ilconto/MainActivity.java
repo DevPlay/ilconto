@@ -2,7 +2,6 @@ package com.prueba.principales.ilconto;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -14,7 +13,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -38,13 +40,19 @@ public class MainActivity extends AppCompatActivity {
      * The {@link ViewPager} that will host the section contents.
      */
     private ViewPager mViewPager;
-
+    private EditText saldo,comensales, propina;
+    private Button calculus;
     private DatabaseReference mDatabase;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        saldo = (EditText) findViewById(R.id.editText2);
+        comensales = (EditText) findViewById(R.id.editText3);
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -61,11 +69,11 @@ public class MainActivity extends AppCompatActivity {
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 submitPost();
-                Snackbar.make(view, "Tu pedido está siendo procesado", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Toast.makeText(getApplicationContext(), "Tu pedido está siendo procesado", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -107,6 +115,13 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void conejo(View view) {
+                /*int n1 = Integer.parseInt(saldo.getText().toString());
+                int n2 = Integer.parseInt(comensales.getText().toString());
+                int resultado = n1+n2;*/
+        Toast.makeText(getApplicationContext(), "El resultado es", Toast.LENGTH_LONG).show();
+    }
+
     /**
      * A placeholder fragment containing a simple view.
      */
@@ -139,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 View rootView = inflater.inflate(R.layout.fragment_calculadora, container, false);
+
                 return rootView;
             }
             if (getArguments().getInt(ARG_SECTION_NUMBER) == 2) {

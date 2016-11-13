@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 
 /**
@@ -25,11 +26,13 @@ public class calculadora extends Fragment {
 
     // TODO: Rename and change types of parameters
     private String mParam1;
+    public EditText saldo, comensales;
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
 
     public calculadora() {
+
         // Required empty public constructor
     }
 
@@ -54,17 +57,23 @@ public class calculadora extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_calculadora, container, false);
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -90,6 +99,8 @@ public class calculadora extends Fragment {
         super.onDetach();
         mListener = null;
     }
+
+
 
     /**
      * This interface must be implemented by activities that contain this
