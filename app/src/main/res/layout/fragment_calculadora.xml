@@ -42,10 +42,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/log96"
-        android:layout_below="@+id/editText3"
+        android:layout_below="@+id/comensales2"
         android:id="@+id/imageView7"
-        android:layout_alignStart="@+id/editText3"
-        android:layout_alignEnd="@+id/editText3" />
+        android:layout_alignStart="@+id/comensales2"
+        android:layout_alignEnd="@+id/comensales2" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -62,8 +62,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/pes96"
         android:id="@+id/imageView6"
-        android:layout_alignStart="@+id/editText2"
-        android:layout_alignEnd="@+id/editText2"
+        android:layout_alignStart="@+id/saldo1"
+        android:layout_alignEnd="@+id/saldo1"
         android:layout_alignBottom="@+id/imageView7" />
 
     <EditText
@@ -71,11 +71,11 @@
         android:inputType="number"
         android:ems="10"
         android:layout_marginTop="65dp"
-        android:id="@+id/editText2"
+        android:id="@+id/saldo1"
         android:hint="Saldo"
         android:layout_marginEnd="17dp"
         android:layout_below="@+id/imageView2"
-        android:layout_toStartOf="@+id/editText3"
+        android:layout_toStartOf="@+id/comensales2"
         android:textAlignment="center"
         android:layout_width="90sp"
         android:textSize="16sp" />
@@ -84,9 +84,9 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/editText3"
-        android:layout_alignBaseline="@+id/editText2"
-        android:layout_alignBottom="@+id/editText2"
+        android:id="@+id/comensales2"
+        android:layout_alignBaseline="@+id/saldo1"
+        android:layout_alignBottom="@+id/saldo1"
         android:layout_centerHorizontal="true"
         android:hint="Comensales"
         android:textSize="16sp"
@@ -100,9 +100,9 @@
         android:id="@+id/editText4"
         android:hint="Propina"
         android:layout_marginStart="24dp"
-        android:layout_alignBaseline="@+id/editText3"
-        android:layout_alignBottom="@+id/editText3"
-        android:layout_toEndOf="@+id/editText3"
+        android:layout_alignBaseline="@+id/comensales2"
+        android:layout_alignBottom="@+id/comensales2"
+        android:layout_toEndOf="@+id/comensales2"
         android:textAlignment="center"
         android:layout_width="90sp"
         android:textSize="16sp" />
@@ -113,7 +113,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="69dp"
         android:id="@+id/calcu_btn"
-        android:onClick="conejo"
+        android:onClick="suma"
         android:layout_below="@+id/imageView6"
         android:layout_alignStart="@+id/imageView6"
         android:layout_alignEnd="@+id/imageView8" />

@@ -13,7 +13,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -41,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
      */
     private ViewPager mViewPager;
     private EditText saldo,comensales, propina;
-    private Button calculus;
     private DatabaseReference mDatabase;
 
 
@@ -49,9 +47,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        saldo = (EditText) findViewById(R.id.editText2);
-        comensales = (EditText) findViewById(R.id.editText3);
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -115,12 +110,20 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void conejo(View view) {
-                /*int n1 = Integer.parseInt(saldo.getText().toString());
-                int n2 = Integer.parseInt(comensales.getText().toString());
-                int resultado = n1+n2;*/
-        Toast.makeText(getApplicationContext(), "El resultado es", Toast.LENGTH_LONG).show();
+    public void suma (View view) {
+        saldo = (EditText) this.findViewById(R.id.saldo1);
+        comensales = (EditText) this.findViewById(R.id.comensales2);
+        /*int n1 = Integer.parseInt(saldo.getText().toString());
+        int n2 = Integer.parseInt(comensales.getText().toString());*/
+        double n1 = Double.parseDouble(saldo.getText().toString());
+        double n2 = Double.parseDouble(comensales.getText().toString());
+        double resultado = n1/n2;
+        String r_final1 = String.valueOf(resultado);
+        /*String r_final2 = String.format("hola %.2f", r_final1);*/
+        Toast.makeText(getApplicationContext(), "Son: $" + r_final1 + " por persona" , Toast.LENGTH_LONG).show();
     }
+
+
 
     /**
      * A placeholder fragment containing a simple view.
