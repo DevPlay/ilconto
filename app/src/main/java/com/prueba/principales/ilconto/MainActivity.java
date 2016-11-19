@@ -20,6 +20,7 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -68,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 submitPost();
-                Toast.makeText(getApplicationContext(), "Tu pedido está siendo procesado", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Se solicita al mozo en la mesa: ", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -118,8 +119,9 @@ public class MainActivity extends AppCompatActivity {
         double n1 = Double.parseDouble(saldo.getText().toString());
         double n2 = Double.parseDouble(comensales.getText().toString());
         double resultado = n1/n2;
-        String r_final1 = String.valueOf(resultado);
-        /*String r_final2 = String.format("hola %.2f", r_final1);*/
+        DecimalFormat dec = new DecimalFormat("#.##");
+        String resultado1 = dec.format(resultado);
+        String r_final1 = String.valueOf(resultado1);
         Toast.makeText(getApplicationContext(), "Son: $" + r_final1 + " por persona" , Toast.LENGTH_LONG).show();
     }
 
