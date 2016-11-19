@@ -114,11 +114,21 @@ public class MainActivity extends AppCompatActivity {
     public void suma (View view) {
         saldo = (EditText) this.findViewById(R.id.saldo1);
         comensales = (EditText) this.findViewById(R.id.comensales2);
-        /*int n1 = Integer.parseInt(saldo.getText().toString());
-        int n2 = Integer.parseInt(comensales.getText().toString());*/
+        propina = (EditText) this.findViewById(R.id.propina2);
         double n1 = Double.parseDouble(saldo.getText().toString());
         double n2 = Double.parseDouble(comensales.getText().toString());
-        double resultado = n1/n2;
+        double n3;
+        double n4;
+        double resultado = 0;
+        if (propina == null ) {
+            n4 = 1;
+            resultado = (n1/n2)*n4;
+        } else {
+            n3 = Double.parseDouble(propina.getText().toString());
+            n4 = (n3/100)+1;
+            resultado = (n1/n2)*n4;
+        }
+
         DecimalFormat dec = new DecimalFormat("#.##");
         String resultado1 = dec.format(resultado);
         String r_final1 = String.valueOf(resultado1);

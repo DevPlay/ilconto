@@ -52,9 +52,9 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/porce"
         android:id="@+id/imageView8"
-        android:layout_alignEnd="@+id/editText4"
-        android:layout_below="@+id/editText4"
-        android:layout_alignStart="@+id/editText4"
+        android:layout_alignEnd="@+id/propina2"
+        android:layout_below="@+id/propina2"
+        android:layout_alignStart="@+id/propina2"
         android:layout_alignBottom="@+id/imageView7" />
 
     <ImageView
@@ -97,7 +97,7 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/editText4"
+        android:id="@+id/propina2"
         android:hint="Propina"
         android:layout_marginStart="24dp"
         android:layout_alignBaseline="@+id/comensales2"
