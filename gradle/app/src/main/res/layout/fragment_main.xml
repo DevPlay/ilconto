@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFF3E0"
+    tools:context="com.prueba.principales.ilconto.MainActivity$PlaceholderFragment">
+
+    <!-- Por ahora esta es usada como pagina de opiniones-->
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        app:srcCompat="@color/Barra_estado"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="50sp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imageView"
+        android:layout_height="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp" />
+
+    <TextView
+        android:text="    Dejanos tu opinión..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:typeface="normal"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:text="¿Que te pareció el servicio?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginTop="25dp"
+        android:id="@+id/textView3"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:numStars="5"
+        android:rating="0.5"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:text="¿Te gustó el ambiente?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/ratingBar"
+        android:layout_alignStart="@+id/ratingBar" />
+
+    <TextView
+        android:text="¿Que opinás de la limpieza e higiene?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ratingBar2"
+        android:layout_alignStart="@+id/ratingBar2" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar2"
+        android:numStars="5"
+        android:rating="0.5"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:id="@+id/ratingBar4"
+        android:numStars="5"
+        android:rating="0.5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="100sp"
+        android:inputType="text"
+        android:text="Agregá un comentario..."
+        android:ems="10"
+        android:layout_below="@+id/ratingBar4"
+        android:layout_alignStart="@+id/ratingBar4"
+        android:layout_marginTop="15dp"
+        android:id="@+id/editText"
+        android:background="@color/colorPrimary"
+        android:layout_toStartOf="@+id/imageButton5" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_send"
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageButton5"
+        android:layout_height="100sp" />
+
+</RelativeLayout>

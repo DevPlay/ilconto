@@ -5,8 +5,10 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#ffa726</item>
         <item name="colorPrimaryDark">#FFF3E0</item>
-        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorAccent">?attr/colorBackgroundFloating</item>
         <item name="android:colorBackground">@color/Barra_estado</item>
+        <item name="android:navigationBarColor">@android:color/darker_gray</item>
+        <item name="android:statusBarColor">@color/Barra_estado</item>
     </style>
 
     <style name="AppTheme.NoActionBar">

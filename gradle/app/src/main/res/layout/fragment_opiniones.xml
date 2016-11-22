@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.prueba.principales.ilconto.opiniones"
+    android:background="#FFF3E0">
+
+    <!-- Por ahora esta es usada como pagina principal-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        app:srcCompat="@color/Barra_estado"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="50sp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imageView"
+        android:layout_height="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp" />
+
+    <TextView
+        android:text="    Estas en..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:typeface="normal"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/kprin"
+        android:id="@+id/imageView3"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        app:srcCompat="@drawable/camp48x48"
+        android:id="@+id/imageButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="84dp" />
+
+    <ImageButton
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        app:srcCompat="@drawable/pes48"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageButton3" />
+
+    <ImageButton
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        app:srcCompat="?android:attr/actionModePasteDrawable"
+        android:layout_alignTop="@+id/imageButton3"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginStart="17dp"
+        android:id="@+id/imageButton4" />
+
+    <ImageButton
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        app:srcCompat="@android:drawable/ic_menu_call"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="41dp"
+        android:id="@+id/imageButton2"
+        android:layout_above="@+id/imageButton"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
