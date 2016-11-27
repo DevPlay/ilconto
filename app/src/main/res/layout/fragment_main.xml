@@ -118,14 +118,14 @@
         android:layout_marginTop="15dp"
         android:id="@+id/editText"
         android:background="@color/colorPrimary"
-        android:layout_toStartOf="@+id/imageButton5" />
+        android:layout_toStartOf="@+id/enviar_comentario" />
 
     <ImageButton
         android:layout_width="wrap_content"
         app:srcCompat="@android:drawable/ic_menu_send"
         android:layout_alignTop="@+id/editText"
         android:layout_alignParentEnd="true"
-        android:id="@+id/imageButton5"
+        android:id="@+id/enviar_comentario"
         android:layout_height="100sp" />
 
 </RelativeLayout>

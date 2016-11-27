@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">#FFF3E0</item>
         <item name="colorAccent">@color/colorPrimary</item>
         <item name="android:colorBackground">@color/Barra_estado</item>
+        <item name="android:statusBarColor">?android:attr/colorBackground</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
