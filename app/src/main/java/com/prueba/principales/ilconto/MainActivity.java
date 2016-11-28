@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 submitPost();
-                Toast.makeText(getApplicationContext(), "Se solicita al mozo en la mesa: ", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "El mozo fue informado de su pedido", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
         String key = mDatabase.child("posts").push().getKey();
         Map<String, Object> postValues = new HashMap<>();
-        postValues.put("Accion", "Llamar al mozo");
+        postValues.put("Accion", "");
 
         Map<String, Object> childUpdates = new HashMap<>();
         childUpdates.put("/posts/" + key, postValues);
