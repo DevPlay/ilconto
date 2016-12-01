@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#FFF3E0"
+    android:background="@drawable/pizarra"
     tools:context="com.prueba.principales.ilconto.calculadora">
 
     <!-- TODO: Update blank fragment layout -->
@@ -12,86 +12,38 @@
         android:layout_width="match_parent"
         android:layout_height="50sp"
         app:srcCompat="@color/Barra_estado"
-        android:layout_alignParentTop="true"
+        android:id="@+id/imageView2"
         android:layout_alignParentEnd="true"
-        android:id="@+id/imageView2" />
-
-    <ImageView
-        android:layout_width="50sp"
-        app:srcCompat="@mipmap/ic_launcher"
-        android:id="@+id/imageView"
-        android:layout_height="50sp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="11dp" />
-
-    <TextView
-        android:text="    Calcula tu cuenta..."
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView2"
-        android:layout_toEndOf="@+id/imageView"
-        android:id="@+id/textView"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:typeface="normal"
-        android:textSize="24sp"
-        android:gravity="center"
         android:layout_alignParentTop="true" />
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <Button
+        android:text="Calcular"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/log96"
-        android:layout_below="@+id/comensales2"
-        android:id="@+id/imageView7"
-        android:layout_alignStart="@+id/comensales2"
-        android:layout_alignEnd="@+id/comensales2" />
+        android:id="@+id/calcu_btn"
+        android:onClick="suma"
+        android:textSize="18sp"
+        android:elevation="4dp"
+        android:layout_marginBottom="97dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/porce"
+        app:srcCompat="@drawable/porce_96"
         android:id="@+id/imageView8"
-        android:layout_alignEnd="@+id/propina2"
-        android:layout_below="@+id/propina2"
-        android:layout_alignStart="@+id/propina2"
-        android:layout_alignBottom="@+id/imageView7" />
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginTop="69dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/pes96"
-        android:id="@+id/imageView6"
-        android:layout_alignStart="@+id/saldo1"
-        android:layout_alignEnd="@+id/saldo1"
-        android:layout_alignBottom="@+id/imageView7" />
-
-    <EditText
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:layout_marginTop="65dp"
-        android:id="@+id/saldo1"
-        android:hint="Saldo"
-        android:layout_marginEnd="17dp"
-        android:layout_below="@+id/imageView2"
-        android:layout_toStartOf="@+id/comensales2"
-        android:textAlignment="center"
-        android:layout_width="90sp"
-        android:textSize="16sp" />
-
-    <EditText
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/comensales2"
-        android:layout_alignBaseline="@+id/saldo1"
-        android:layout_alignBottom="@+id/saldo1"
-        android:layout_centerHorizontal="true"
-        android:hint="Comensales"
-        android:textSize="16sp"
-        android:textAlignment="center"
-        android:layout_width="90sp" />
+        app:srcCompat="@drawable/com_96"
+        android:id="@+id/imageView7"
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_height="wrap_content"
@@ -99,23 +51,76 @@
         android:ems="10"
         android:id="@+id/propina2"
         android:hint="Propina"
-        android:layout_marginStart="24dp"
-        android:layout_alignBaseline="@+id/comensales2"
-        android:layout_alignBottom="@+id/comensales2"
-        android:layout_toEndOf="@+id/comensales2"
+        android:textColorHint="#ffffff"
         android:textAlignment="center"
-        android:layout_width="90sp"
-        android:textSize="16sp" />
+        android:layout_width="96sp"
+        android:textSize="16dp"
+        android:selectAllOnFocus="true"
+        android:textColor="@android:color/white"
+        android:layout_alignTop="@+id/comensales2"
+        android:layout_alignStart="@+id/imageView8" />
 
-    <Button
-        android:text="Calcular"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="69dp"
-        android:id="@+id/calcu_btn"
-        android:onClick="suma"
-        android:layout_below="@+id/imageView6"
-        android:layout_alignStart="@+id/imageView6"
-        android:layout_alignEnd="@+id/imageView8" />
+        app:srcCompat="@drawable/pes96"
+        android:id="@+id/imageView6"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginStart="13dp" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/saldo1"
+        android:hint="Saldo"
+        android:textColorHint="#ffffff"
+        android:textSize="16dp"
+        android:layout_width="96sp"
+        android:textColor="#ffffff"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:textAlignment="center"
+        android:elevation="0dp"
+        android:layout_alignBottom="@+id/comensales2"
+        android:layout_alignStart="@+id/imageView6" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/comensales2"
+        android:hint="Comensales"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_width="96sp"
+        android:singleLine="true"
+        android:textColorLink="@android:color/darker_gray"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/imageView7"
+        android:layout_alignStart="@+id/imageView7" />
+
+    <ImageView
+        android:layout_width="50sp"
+        app:srcCompat="@drawable/user"
+        android:id="@+id/imageView"
+        android:layout_height="50sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="9dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Calcula tu cuenta..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:typeface="normal"
+        android:textSize="24sp"
+        android:gravity="center"
+        app:srcCompat="@drawable/porce_144"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView" />
 
 </RelativeLayout>

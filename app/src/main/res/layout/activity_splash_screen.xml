@@ -7,32 +7,33 @@
     android:layout_height="match_parent"
     tools:context="com.prueba.principales.ilconto.SplashScreen"
     android:theme="@style/AppTheme.NoActionBar"
-    tools:background="#ffa726">
+    tools:background="@drawable/fondo1"
+    android:backgroundTint="@color/Barra_estado">
 
 
     <ProgressBar
         style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:id="@+id/progressBar"
-        android:layout_below="@+id/imageView5"
+        android:layout_marginBottom="58dp"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/mozo"
-        android:id="@+id/imageView5"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/letras"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/ilconto"
         android:id="@+id/imageView4"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:contentDescription="@android:string/fingerprint_icon_content_description"
+        android:background="@drawable/fondo3"
+        android:cropToPadding="false"
+        android:fitsSystemWindows="false"
+        android:layout_alignParentEnd="false"
+        android:adjustViewBounds="false"
+        android:layout_toEndOf="@+id/progressBar"
+        android:layout_alignParentStart="true"
+        android:baselineAlignBottom="false"
+        android:scaleType="fitStart" />
 
 </RelativeLayout>

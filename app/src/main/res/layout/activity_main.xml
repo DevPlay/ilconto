@@ -39,9 +39,12 @@
         android:id="@+id/fab"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_gravity="end|bottom"
+        android:layout_gravity="top|center_horizontal"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@drawable/camp48x48"
-        app:backgroundTint="#bdbdbd" />
+        app:srcCompat="@drawable/camp72x72"
+        app:backgroundTint="#FFEE51"
+        app:layout_anchor="@+id/container"
+        app:layout_anchorGravity="bottom|right"
+        android:scaleType="centerInside" />
 
 </android.support.design.widget.CoordinatorLayout>

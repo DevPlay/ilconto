@@ -2,6 +2,7 @@
 <resources>
     <color name="colorPrimary">#e0e0e0</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="Barra_estado">#ffcc80</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="Barra_estado">#d1c4e9</color>
+    <color name="statusBarColor">#d1c4e9</color>
 </resources>
