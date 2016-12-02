@@ -23,7 +23,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/Tiza-ilconto"
+        app:srcCompat="@drawable/tiza_ilconto"
         android:id="@+id/imageView4"
         android:contentDescription="@android:string/fingerprint_icon_content_description"
         android:background="@drawable/pizarra"
