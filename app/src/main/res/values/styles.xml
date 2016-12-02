@@ -3,8 +3,8 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">#ffa726</item>
-        <item name="colorPrimaryDark">#FFF3E0</item>
+        <item name="colorPrimary">@color/Barra_estado</item>
+        <item name="colorPrimaryDark">@color/Barra_estado</item>
         <item name="colorAccent">@color/colorPrimary</item>
         <item name="android:colorBackground">@color/Barra_estado</item>
         <item name="android:statusBarColor">@color/statusBarColor</item>
@@ -14,9 +14,9 @@
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="colorPrimary">#ffa726</item>
-        <item name="colorPrimaryDark">#ffa726</item>
-        <item name="colorAccent">#ffa726</item>
+        <item name="colorPrimary">@color/Barra_estado</item>
+        <item name="colorPrimaryDark">@color/Barra_estado</item>
+        <item name="colorAccent">@color/Barra_estado</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

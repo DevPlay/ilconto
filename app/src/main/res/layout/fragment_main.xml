@@ -1,18 +1,20 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/pizarra"
     tools:context="com.prueba.principales.ilconto.MainActivity$PlaceholderFragment">
 
     <!-- Por ahora esta es usada como pagina de opiniones-->
 
+
     <TextView
         android:id="@+id/section_label"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="invisible"/>
+
 
     <TextView
         android:text="¿Te gustó el ambiente?"
@@ -48,21 +50,6 @@
         android:id="@+id/ratingBar4"
         android:numStars="5"
         android:rating="0.5" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="100sp"
-        android:inputType="text|textCapCharacters|textCapWords"
-        android:text=" Agregá un comentario..."
-        android:ems="25"
-        android:layout_marginTop="19dp"
-        android:id="@+id/editText"
-        android:background="@color/colorPrimary"
-        android:singleLine="false"
-        android:layout_below="@+id/ratingBar4"
-        android:layout_alignStart="@+id/ratingBar4"
-        android:layout_toStartOf="@+id/enviar_comentario"
-        android:paddingLeft="10px" />
 
     <RatingBar
         android:layout_width="wrap_content"
@@ -103,35 +90,53 @@
         android:layout_below="@+id/imageView2"
         android:layout_alignParentEnd="true" />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        app:srcCompat="@android:drawable/ic_menu_send"
-        android:id="@+id/enviar_comentario"
-        android:layout_height="100sp"
-        android:layout_alignTop="@+id/editText"
-        android:layout_alignParentEnd="true"
-        android:backgroundTintMode="screen" />
-
     <ImageView
         android:layout_width="50sp"
         app:srcCompat="@drawable/user2"
         android:id="@+id/imageView"
         android:layout_height="50sp"
-        android:layout_marginStart="11dp"
-        android:layout_below="@+id/section_label"
-        android:layout_toEndOf="@+id/section_label" />
+        tools:layout_width="50sp"
+        tools:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textView3" />
 
     <TextView
         android:text="Dejanos tu opinión..."
-        android:textColor="#000000"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/textView"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:typeface="normal"
         android:textSize="24sp"
         android:gravity="center"
-        android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginTop="87dp"
+        android:layout_below="@+id/ratingBar4"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="100sp"
+        android:inputType="text|textCapCharacters|textCapWords"
+        android:hint="Agrega un comentario..."
+        android:textColorHint="#ffffff"
+        android:ems="25"
+        android:id="@+id/editText"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="10px"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/imageButton5" />
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_send"
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imageButton5"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_width="80sp" />
 
 </RelativeLayout>

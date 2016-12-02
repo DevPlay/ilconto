@@ -1,8 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/pizarra"
     tools:context="com.prueba.principales.ilconto.calculadora">
 
@@ -15,35 +15,6 @@
         android:id="@+id/imageView2"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true" />
-
-    <Button
-        android:text="Calcular"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/calcu_btn"
-        android:onClick="suma"
-        android:textSize="18sp"
-        android:elevation="4dp"
-        android:layout_marginBottom="97dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/porce_96"
-        android:id="@+id/imageView8"
-        android:layout_below="@+id/imageView"
-        android:layout_toEndOf="@+id/textView"
-        android:layout_marginTop="69dp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/com_96"
-        android:id="@+id/imageView7"
-        android:layout_alignTop="@+id/imageView8"
-        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_height="wrap_content"
@@ -59,15 +30,6 @@
         android:textColor="@android:color/white"
         android:layout_alignTop="@+id/comensales2"
         android:layout_alignStart="@+id/imageView8" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/pes96"
-        android:id="@+id/imageView6"
-        android:layout_alignTop="@+id/imageView7"
-        android:layout_alignStart="@+id/imageView"
-        android:layout_marginStart="13dp" />
 
     <EditText
         android:layout_height="wrap_content"
@@ -98,7 +60,8 @@
         android:textColorLink="@android:color/darker_gray"
         android:layout_marginTop="39dp"
         android:layout_below="@+id/imageView7"
-        android:layout_alignStart="@+id/imageView7" />
+        android:layout_alignStart="@+id/imageView7"
+        android:textSize="16sp" />
 
     <ImageView
         android:layout_width="50sp"
@@ -122,5 +85,44 @@
         app:srcCompat="@drawable/porce_144"
         android:layout_alignBottom="@+id/imageView2"
         android:layout_toEndOf="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/porce_96"
+        android:id="@+id/imageView8"
+        android:layout_marginTop="71dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/com_96"
+        android:id="@+id/imageView7"
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pes96"
+        android:id="@+id/imageView6"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginStart="27dp" />
+
+    <Button
+        android:text="Calcular"
+        android:layout_width="match_parent"
+        android:id="@+id/calcu_btn"
+        android:onClick="suma"
+        android:textSize="18sp"
+        android:elevation="4dp"
+        android:layout_below="@+id/propina2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="163dp"
+        android:layout_height="100sp" />
 
 </RelativeLayout>

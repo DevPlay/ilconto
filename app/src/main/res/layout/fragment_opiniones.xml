@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.prueba.principales.ilconto.opiniones"
-    android:background="@drawable/pizarra">
+    android:background="@drawable/pizarra"
+    tools:context="com.prueba.principales.ilconto.opiniones">
+
 
     <!-- Por ahora esta es usada como pagina principal-->
 
@@ -15,26 +16,6 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:id="@+id/imageView2" />
-
-    <ImageButton
-        android:layout_height="100sp"
-        app:srcCompat="@android:drawable/btn_radio"
-        android:id="@+id/imageButton"
-        android:layout_marginBottom="41dp"
-        android:layout_width="300sp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:background="?android:attr/colorButtonNormal" />
-
-    <ImageButton
-        android:layout_height="80sp"
-        app:srcCompat="@drawable/tiza_campana72"
-        android:layout_marginBottom="43dp"
-        android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
-        android:layout_above="@+id/imageButton"
-        android:layout_alignEnd="@+id/imageButton"
-        android:backgroundTint="@android:color/transparent" />
 
     <ImageButton
         android:layout_width="80sp"
@@ -52,7 +33,8 @@
         android:id="@+id/imageView3"
         android:scaleType="fitXY"
         android:layout_below="@+id/imageView2"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
 
     <ImageView
         android:layout_width="50sp"
@@ -86,5 +68,25 @@
         android:layout_marginStart="15dp"
         android:layout_above="@+id/imageView3"
         android:layout_toEndOf="@+id/imageView" />
+
+    <ImageButton
+        app:srcCompat="@drawable/tiza_campana72"
+        android:layout_marginBottom="116dp"
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_above="@+id/imageButton"
+        android:layout_alignEnd="@+id/imageButton"
+        android:layout_height="80sp" />
+
+    <ImageButton
+        android:layout_height="100sp"
+        app:srcCompat="@android:drawable/btn_radio"
+        android:id="@+id/imageButton"
+        android:layout_marginBottom="82dp"
+        android:layout_width="300sp"
+        android:background="?android:attr/colorButtonNormal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
