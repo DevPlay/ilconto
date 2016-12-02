@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context="com.prueba.principales.ilconto.SplashScreen"
     android:theme="@style/AppTheme.NoActionBar"
-    tools:background="@drawable/fondo1"
+    tools:background="@drawable/pizarra"
     android:backgroundTint="@color/Barra_estado">
 
 
@@ -23,17 +23,14 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/ilconto"
+        app:srcCompat="@drawable/Tiza-ilconto"
         android:id="@+id/imageView4"
         android:contentDescription="@android:string/fingerprint_icon_content_description"
-        android:background="@drawable/fondo3"
-        android:cropToPadding="false"
+        android:background="@drawable/pizarra"
         android:fitsSystemWindows="false"
-        android:layout_alignParentEnd="false"
-        android:adjustViewBounds="false"
-        android:layout_toEndOf="@+id/progressBar"
-        android:layout_alignParentStart="true"
         android:baselineAlignBottom="false"
-        android:scaleType="fitStart" />
+        android:scaleType="fitStart"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
